@@ -1,0 +1,202 @@
+*{
+	margin-top: 0; 
+	margin-bottom: 0;
+}
+body{
+	background-color: #02010a;
+	font-family: 'Dancing Script', cursive;
+
+}
+#contenido{
+	margin:0px auto;
+	display: block;
+}
+header{
+
+	background-color: #5b7989;
+	border-radius: 10px 10px 0px 0px;
+	-moz-border-radius:10px 10px 0px 0px;
+	-webkit-border-radius: 10px 10px 0px 0px;
+}
+
+#headindex h1{
+	text-shadow: 2px 2px 2px #02010A;
+	text-align: left;
+	color: white;
+	display: inline;
+}
+#ungoliant img{
+	width: 60%;
+	padding: 5%;
+}
+#melkor{
+	
+	margin:0px auto;
+	display: block;
+}
+#ungoliant{
+	background-color: #82c3a6;
+	padding: 0;
+}
+img{
+	width: 300px;
+	box-shadow: 2px #02010a;
+}
+#arboles{
+	margin:10px auto;
+	display: block;
+}
+#arboles img{
+	width: 80%;
+	box-shadow: 2px #82c3a6;
+	border: 2px solid;
+	transition: transform 2s;
+}
+#arboles img:hover{
+	transform: rotate(10deg);
+}
+#valar{
+	margin: 10px auto;
+	display: block;
+}
+#valar img{
+	width: 80%;
+	height: 80%;
+	box-shadow:  #82c3a6;
+	border: 2px solid;
+	transition: transform 2s;
+}
+#valar img:hover{
+	transform: translate(20px, -5px);
+}
+footer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	border-radius: 0px 0px 10px 10px;
+	-moz-border-radius:0px 0px 10px 10px;
+	-webkit-border-radius: 0px 0px 10px 10px; 
+	background-color: #C6d5c5;
+	padding: 0;
+}
+footer img{
+	width: 20px;
+	height: 20px;
+}
+#img2{
+	display: flex;
+	background-color: #d5c75f;
+	border: 1px solid;
+	text-align: center;
+	padding: 1%;
+}
+a{
+	color: white;
+}
+#nav a{
+	padding: 1%;
+}
+#underline{
+	text-decoration: none;
+}
+#valinor{
+	background-color: #d5c75f;
+}
+#val1{
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+}
+#val3{
+	-webkit-filter: sepia(90%);
+	filter: sepia(90%);
+}
+#valinor #row1 div:nth-child(even){
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+}
+
+#valinor #row2 div:nth-child(odd){
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+}
+body{
+		animation: margen 2s;
+	}
+	@-webkit-keyframes margen{
+		0%{
+			margin-top: 150%;
+		}
+
+		60%{
+			margin-top: -5%;
+		}
+		100%{
+			margin-top: 0%;
+		}
+	}
+@media (max-width: 900px){
+	header{
+		display: flex;
+		flex-direction: column;
+	}
+	#row1{
+		display: flex;
+		flex-direction: column;
+	}
+	#valinor img{
+		width: 90%;
+	}
+	#nav{
+		text-align: center;
+	}
+	#img2{
+		flex-direction: column;
+	}
+	#contenido{
+		width: 100%;
+	}
+	.footer{
+		padding:5% 0 0 15%;
+	}
+	
+}
+@media(min-width: 901px){
+	header{
+		display: flex;
+		flex-direction: row;
+	}
+	#row1{
+		display: flex;
+		flex-direction: row;
+	}
+	#row2{
+		display: flex;
+		flex-direction: row;
+	}
+	#valinor div img{
+		width: 80%;
+	}
+	.ancho{
+		width: 33%;
+		padding: 2%;
+	}
+	#nav{
+		margin-top: 1%;
+		margin-left: 40%;
+	}
+	footer{
+		display: flex;
+		flex-direction: row;
+
+	}
+	#img2{
+		flex-direction: row;
+	}
+	#contenido{
+		width: 900px;
+	}
+	.footer{
+		padding: 2.5%;
+		width: 20%;
+	}
+}
